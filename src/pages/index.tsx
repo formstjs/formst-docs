@@ -21,28 +21,28 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Write minimal code to get the form working. Segment forms exactly how it
+        would in UI and use it without having to worry too much.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Easy to customise',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Anything passed is inherited by the children components. So you never
+        have to worry about customising designs.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by React and MST',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Comes with the power and speed of MST. Ease of usability owing to its
+        OOP like structure.
       </>
     ),
   },
