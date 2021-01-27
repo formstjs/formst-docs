@@ -38,7 +38,13 @@ const TodoForm = createFormModel(
       description: 'required',
     },
   }
-)
+).actions(self => ({
+  onSubmit: () => {
+    setTimeout(() => {
+      alert(JSON.stringify(getSnapshot(self), null, 2));
+    }, 100);
+  },
+}));
 ```
 
 2. Create an instance of the model
@@ -54,13 +60,13 @@ const todoForm = TodoForm.create({
 
 ```
 <MSTForm formInstance={todoForm}>
-  <Field name="title" />
-  <br />
-  <ErrorMessage name="title" />
-  <br />
-  <br />
-  <Field name="description" />
-  <br />
-  {/* <ErrorMessage name="description" /> */}
+  <form onSubmit={todoForm.handleSubmit}>
+    <Field name="title" />
+    <ErrorMessage name="title" />
+    <br />
+    <Field name="description" />
+    <ErrorMessage name="description" />
+    <button type="submit">Submit</button>
+  </form>
 </MSTForm>
 ```

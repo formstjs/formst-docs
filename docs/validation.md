@@ -17,11 +17,13 @@ const TodoForm = createFormModel(
   {
     title: types.string,
     description: types.string,
+    user: types.string
   },
   {
     validation: {
-      title: ['required'],
+      title: 'required',
       description: 'required',
+      user: ['required', 'email']
     },
   }
 );
@@ -36,12 +38,7 @@ defineValidators({
   minLen: (value: any) => ({
     valid: typeof value === 'string' && value.length < 8,
     message: 'String is greater than 8 chars',
-  }),
-
-  validation: {
-    title: ['required'],
-    description: ['required', minLen],
-  },
+  })
 });
 ```
 

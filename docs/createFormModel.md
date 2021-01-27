@@ -28,3 +28,8 @@ const TodoForm = createFormModel(
   }
 );
 ```
+
+### Variables Provided
+
+- **submitting:** Returns true when the form is submitting
+- **touched:** Returns a JSON with the values that are touched
