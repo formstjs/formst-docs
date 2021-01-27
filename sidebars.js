@@ -9,7 +9,7 @@
 
 module.exports = {
   someSidebar: {
-    Basics: ['gettingStarted'],
+    Basics: ['gettingStarted', 'validation', 'mixed'],
     APIs: [
       'createFormModel',
       'MSTForm',
