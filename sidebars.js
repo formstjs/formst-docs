@@ -10,6 +10,12 @@
 module.exports = {
   someSidebar: {
     Basics: ['gettingStarted'],
-    APIs: ['createFormModel', 'Field', 'errorMessage'],
+    APIs: [
+      'createFormModel',
+      'MSTForm',
+      'field',
+      'errorMessage',
+      'defineValidators',
+    ],
   },
 };
