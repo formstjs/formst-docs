@@ -9,7 +9,7 @@ We can add validations to each field. You can pass validations in option inside 
 
 ### Default way of adding validation
 
-Validations can be passed as array. Currently `required`, `email` and `number` is supported.
+Validations can be passed as an array. Currently, `required`, `email` and `number` are available by default.
 
 ```
 const TodoForm = createFormModel(
@@ -36,8 +36,8 @@ You can also add more validators.
 ```
 defineValidators({
   minLen: (value: any) => ({
-    valid: typeof value === 'string' && value.length < 8,
-    message: 'String is greater than 8 chars',
+    valid: typeof value === 'string' && value.length > 3,
+    message: 'Input should be more than 3 characters',
   })
 });
 ```

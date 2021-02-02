@@ -8,20 +8,20 @@
  */
 
 module.exports = {
-  title: 'MST Forms',
-  tagline: 'A new way to create responsive forms',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'Formst',
+  tagline: 'A new way to create React forms',
+  url: 'https://formstjs.github.io',
+  baseUrl: '/formst/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'formstjs', // Usually your GitHub org/user name.
+  projectName: 'formst', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'MST Forms',
+      title: 'Formst',
       logo: {
-        alt: 'MST Forms Logo',
+        alt: 'Formst Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -34,7 +34,7 @@ module.exports = {
         // {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://git.geekyants.com/himanshu/mobx-state-tree-form',
+          href: 'https://github.com/formstjs/formst',
           label: 'GitHub',
           position: 'right',
         },
@@ -50,10 +50,10 @@ module.exports = {
               label: 'Style Guide',
               to: 'docs/',
             },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
+            // {
+            //   label: 'Second Doc',
+            //   to: 'docs/doc2',
+            // },
           ],
         },
         {
@@ -61,15 +61,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/formst',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/formst',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/formst',
             },
           ],
         },
@@ -82,7 +82,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/formstjs/formst',
             },
           ],
         },
@@ -107,7 +107,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GeekyAnts. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -117,14 +117,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/formstjs/formst-docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/formstjs/formst-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

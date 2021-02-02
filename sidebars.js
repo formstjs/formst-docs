@@ -9,10 +9,10 @@
 
 module.exports = {
   someSidebar: {
-    Basics: ['gettingStarted', 'validation', 'mixed', 'preprocessors'],
+    Basics: ['gettingStarted', 'validation', 'nested', 'middleware'],
     APIs: [
       'createFormModel',
-      'MSTForm',
+      'formst',
       'field',
       'errorMessage',
       'defineValidators',

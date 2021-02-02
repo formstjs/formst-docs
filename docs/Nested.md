@@ -1,17 +1,17 @@
 ---
-id: mixed
-title: Mixed Types
-sidebar_label: Mixed Types
-slug: /mixed
+id: nested
+title: Nested Forms
+sidebar_label: Nested Forms
+slug: /nested
 ---
 
-It is very simple to handle nested data
+It is very simple to handle nested data. You can create nested forms by creating nested form models.
 
-### API
+### Usage
 
-Creating a child form instance to be used with **Arrays**
+In this example, CreateProject form model contains other form models, Milestone and ProjectTeam.
 
-```
+```typescript
 const Milestone = createFormModel(
   'Milestone',
   {
@@ -27,11 +27,7 @@ const Milestone = createFormModel(
     },
   }
 );
-```
 
-Creating a child form instance to be used with **Objects**
-
-```
 const ProjectTeam = createFormModel(
   'ProjectTeam',
   {
@@ -45,11 +41,7 @@ const ProjectTeam = createFormModel(
     },
   }
 );
-```
 
-Using child form instances inside the parent
-
-```
 const CreateProject = createFormModel(
   'CreateProject',
   {
@@ -66,5 +58,7 @@ const CreateProject = createFormModel(
   }
 )
 ```
+
+
 
 Note: `valid` is required to make sure the form checks the child form.

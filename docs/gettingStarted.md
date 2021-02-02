@@ -7,7 +7,7 @@ slug: /
 
 ## Introduction
 
-**MST-Form** is the new way to create and handle forms. Unlike famous libraries like Formik that are UI-first, MST-Form is data first. It is based on **MST**(MobX-State-Tree). What you get out of the box is a highly performant form library that helps you create interdependent fields of a table and add validations to it.
+**Formst** is the new way to create and handle forms. Unlike famous libraries like Formik that are UI-first, Formst is data first. It is based on **MST**(MobX-State-Tree). What you get out of the box is a highly performant form library that helps you create interdependent fields of a table and add validations to it.
 
 ### Installation
 
@@ -15,10 +15,10 @@ Use `yarn` or `npm` to install this library:
 
 ```
 # yarn
-yarn add mst-form-creator
+yarn add formst
 
 # npm
-npm add mst-form-creator
+npm add formst
 ```
 
 ### Basic Usage
@@ -56,10 +56,10 @@ const todoForm = TodoForm.create({
 });
 ```
 
-3. Wrap the components inside `MSTForm` and use `Field` API to render the fields
+3. Wrap the components inside `Formst` and use `Field` API to render the fields
 
 ```
-<MSTForm formInstance={todoForm}>
+<Formst formInstance={todoForm}>
   <form onSubmit={todoForm.handleSubmit}>
     <Field name="title" />
     <ErrorMessage name="title" />
@@ -68,5 +68,5 @@ const todoForm = TodoForm.create({
     <ErrorMessage name="description" />
     <button type="submit">Submit</button>
   </form>
-</MSTForm>
+</Formst>
 ```

@@ -5,14 +5,14 @@ sidebar_label: ErrorMessage
 slug: /api/error-message
 ---
 
-We can use this prop to render an input.
+We can use this component to render an error message for an input.
 
 ### API
 
 ```
-import { Field } from "mst-form-creator";
+import { ErrorMessage } from "formst";
 
-<Field name="field-name" />
+<ErrorMessage name="field-name" />
 ```
 
 ### Parameters
@@ -22,10 +22,10 @@ name: string, required
 component: string | React.Component
 ```
 
-Any extra props will be passed down to the child component
+Any extra props will be passed down to the child component.
 
 ### Usage
 
 ```
-<Field name="title" component={CustomComponent}>
+<ErrorMessage name="title" component={CustomComponent}>
 ```
