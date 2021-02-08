@@ -11,12 +11,12 @@ module.exports = {
   title: 'Formst',
   tagline: 'A new way to create React forms',
   url: 'https://formstjs.github.io',
-  baseUrl: '/formst/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'formstjs', // Usually your GitHub org/user name.
-  projectName: 'formst', // Usually your repo name.
+  projectName: 'formstjs.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Formst',
