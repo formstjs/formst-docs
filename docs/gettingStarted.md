@@ -77,3 +77,31 @@ npm add formst
      </form>
    </Formst>
    ```
+
+4. Optional: If you don't like `Field` API, you can directly plug this to an element.
+
+   Note: For this to work, you need to wrap the entire component inside observer.
+
+   ```tsx
+   export default observer(() => {
+     return (
+       <Formst formInstance={todoForm}>
+         <form onSubmit={todoForm.handleSubmit}>
+           <input
+             name="title"
+             value={todoForm.title}
+             onChange={todoForm.handleChange}
+             onBlur={todoForm.handleBlur}></input>
+           <ErrorMessage name="title" />
+
+           <br />
+
+           <Field name="description" />
+           <ErrorMessage name="description" />
+
+           <button type="submit">Submit</button>
+         </form>
+       </Formst>
+     );
+   });
+   ```
