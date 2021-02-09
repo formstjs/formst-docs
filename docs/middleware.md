@@ -11,7 +11,7 @@ Formst exports [addMiddleware](https://mobx-state-tree.js.org/concepts/middlewar
 
 ### Usage
 
-```
+```tsx
 const TodoForm = createFormModel(
   'TodoForm',
   {
@@ -21,7 +21,7 @@ const TodoForm = createFormModel(
   ...
 );
 
-addMiddleware(createProjectForm, (call, next, abort) => {
+addMiddleware(TodoForm, (call, next, abort) => {
   if (call.name === 'setValue') {
     const fieldName = call.args[0];
     if (fieldName === 'title') {

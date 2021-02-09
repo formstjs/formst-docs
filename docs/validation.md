@@ -5,33 +5,33 @@ sidebar_label: Validation
 slug: /validation
 ---
 
-We can add validations to each field. You can pass validations in option inside `createFormModel` API. There are multiple ways to define validation for a field.
+We can add validations to each field. You can pass validations using options in the `createFormModel` API. Field validations can be defined in multiple ways.
 
 ### Default way of adding validation
 
 Validations can be passed as an array. Currently, `required`, `email` and `number` are available by default.
 
-```
+```tsx
 const TodoForm = createFormModel(
   'TodoForm',
   {
     title: types.string,
     description: types.string,
-    user: types.string
+    user: types.string,
   },
   {
     validation: {
       title: 'required',
       description: 'required',
-      user: ['required', 'email']
+      user: ['required', 'email'],
     },
-  }
+  },
 );
 ```
 
 ### Adding validators
 
-You can also add more validators.
+You can also add more validators:
 
 ```
 defineValidators({
