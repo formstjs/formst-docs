@@ -18,6 +18,7 @@ module.exports = {
   organizationName: 'formstjs', // Usually your GitHub org/user name.
   projectName: 'formstjs.github.io', // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     navbar: {
       title: 'Formst',
       logo: {

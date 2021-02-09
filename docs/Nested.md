@@ -5,13 +5,13 @@ sidebar_label: Nested Forms
 slug: /nested
 ---
 
-It is very simple to handle nested data. You can create nested forms by creating nested form models.
+Formst makes it very easy to handle nested data. You can create nested forms by creating nested form models.
 
 ### Usage
 
 In this example, CreateProject form model contains other form models, Milestone and ProjectTeam.
 
-```typescript
+```tsx
 const Milestone = createFormModel(
   'Milestone',
   {
@@ -19,13 +19,13 @@ const Milestone = createFormModel(
   },
   {
     validation: {
-      name: name => {
+      name: (name) => {
         if (!name) {
           return 'Required';
         }
       },
     },
-  }
+  },
 );
 
 const ProjectTeam = createFormModel(
@@ -39,7 +39,7 @@ const ProjectTeam = createFormModel(
       name: 'required',
       lead: ['required', 'minLen'],
     },
-  }
+  },
 );
 
 const CreateProject = createFormModel(
@@ -55,10 +55,8 @@ const CreateProject = createFormModel(
       milestones: 'valid',
       team: 'valid',
     },
-  }
-)
+  },
+);
 ```
 
-
-
-Note: `valid` is required to make sure the form checks the child form.
+Note: `valid` is required to ensure that the form checks the child form.
