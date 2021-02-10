@@ -19,17 +19,17 @@ module.exports = {
   projectName: 'formstjs.github.io', // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
-    algolia: {
-      // apiKey: '74e045c9f1e92488f848f0834b497d62',
-      // indexName: 'formst',
-      // Optional: see doc section bellow
-      // contextualSearch: true,
-      // Optional: Algolia search parameters
-      // searchParameters: {},
-      // algoliaOptions: {facetFilters: ['type:content', 'language:en']}, // Optional, if provided by Algolia,
-      // debug: false,
-      // placeholder: 'Search Docs',
-    },
+    // algolia: {
+    // apiKey: '74e045c9f1e92488f848f0834b497d62',
+    // indexName: 'formst',
+    // Optional: see doc section bellow
+    // contextualSearch: true,
+    // Optional: Algolia search parameters
+    // searchParameters: {},
+    // algoliaOptions: {facetFilters: ['type:content', 'language:en']}, // Optional, if provided by Algolia,
+    // debug: false,
+    // placeholder: 'Search Docs',
+    // },
     navbar: {
       title: 'Formst',
       logo: {
