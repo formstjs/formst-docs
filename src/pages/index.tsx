@@ -23,7 +23,7 @@ const features = [
     description: (
       <>
         Create a MobX-State-Tree model that reflects the functionality and the
-        structure of your form and simply plug it to your form.
+        structure of your form and simply plug it into your form.
       </>
     ),
   },
@@ -33,8 +33,8 @@ const features = [
     description: (
       <>
         Intercept and manipulate the input or update another field on the basis
-        of value change. Being closely associated to the Data-Layer, it's very
-        simple to manipulate fields.
+        of a change in value. As it is closely associated with the Data-Layer,
+        field manipulation becomes very simple.
       </>
     ),
   },
@@ -43,7 +43,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Get various validation for all fields right out of the box. Want to
+        Get various validations for all fields right out of the box. Want to
         create a custom one? It's just as simple.
       </>
     ),
