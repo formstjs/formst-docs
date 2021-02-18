@@ -25,6 +25,11 @@ function Home() {
       <Head>
         <meta property="og:description" content="My custom description" />
         <meta charSet="utf-8" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous"></link>
         <title>Formst</title>
       </Head>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
