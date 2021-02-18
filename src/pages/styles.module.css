@@ -11,10 +11,25 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
+.justifyCenter {
+  justify-content: center;
+}
+.alignCenter {
+  align-items: center;
+}
+.displayFlex {
+  display: flex;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.marginVerticalAuto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +43,8 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-top: 18px;
+  /* justify-content: center; */
 }
 
 .features {
@@ -39,6 +55,20 @@
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.getStarted {
+  border-radius: 3px;
+  font-size: 14px;
+}
+.subtitle {
+  font-size: 18px;
+}
+.mainContainer {
+  width: 55%;
+  margin: 'auto';
 }

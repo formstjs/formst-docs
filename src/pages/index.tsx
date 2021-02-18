@@ -15,54 +15,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Head from '@docusaurus/Head';
-
-const features = [
-  {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Write minimal code to get the form working. Segment forms exactly how it
-        would in UI and use it without having to worry too much.
-      </>
-    ),
-  },
-  {
-    title: 'Easy to customise',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Anything passed is inherited by the children components. So you never
-        have to worry about customising designs.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React and MST',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Comes with the power and speed of MST. Ease of usability owing to its
-        OOP like structure.
-      </>
-    ),
-  },
-];
-
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
+import Fold2 from './folds/Fold2';
 
 function Home() {
   const context = useDocusaurusContext();
@@ -81,7 +34,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
@@ -90,24 +43,7 @@ function Home() {
           </div>
         </div>
       </header>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map(({title, imageUrl, description}) => (
-                  <Feature
-                    key={title}
-                    title={title}
-                    imageUrl={imageUrl}
-                    description={description}
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
+      <Fold2 />
     </Layout>
   );
 }
