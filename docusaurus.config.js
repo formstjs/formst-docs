@@ -9,7 +9,7 @@
 
 module.exports = {
   title: 'Formst',
-  tagline: 'A new way to create React forms',
+  tagline: 'A JS library for quickly building high performance forms in React.',
   url: 'https://formstjs.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -19,6 +19,17 @@ module.exports = {
   projectName: 'formstjs.github.io', // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
+    // algolia: {
+    // apiKey: '74e045c9f1e92488f848f0834b497d62',
+    // indexName: 'formst',
+    // Optional: see doc section bellow
+    // contextualSearch: true,
+    // Optional: Algolia search parameters
+    // searchParameters: {},
+    // algoliaOptions: {facetFilters: ['type:content', 'language:en']}, // Optional, if provided by Algolia,
+    // debug: false,
+    // placeholder: 'Search Docs',
+    // },
     navbar: {
       title: 'Formst',
       logo: {
@@ -29,8 +40,8 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          label: 'Doc',
+          position: 'right',
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.

@@ -20,52 +20,90 @@ import Introduction from '../components/Introduction';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Simple To Use',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Write minimal code to get the form working. Segment forms exactly how it
-        would in UI and use it without having to worry too much.
+        Create a MobX-State-Tree model that reflects the functionality and the
+        structure of your form and simply plug it into your form.
       </>
     ),
   },
   {
-    title: 'Easy to customise',
+    title: 'Middleware and Interdependency',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Anything passed is inherited by the children components. So you never
-        have to worry about customising designs.
+        Intercept and manipulate the input or update another field on the basis
+        of a change in value. As it is closely associated with the Data-Layer,
+        field manipulation becomes very simple.
       </>
     ),
   },
   {
-    title: 'Powered by React and MST',
+    title: 'Out of the Box',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Comes with the power and speed of MST. Ease of usability owing to its
-        OOP like structure.
+        Get various validations for all fields right out of the box. Want to
+        create a custom one? It's just as simple.
       </>
     ),
+  },
+  {
+    title: 'Easy on the bundle',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: <>1.7kB. That's all.</>,
   },
 ];
 
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx('col col--3')}>
       {imgUrl && (
-        <div className="text--center">
+        <div>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      <h3
+        style={{
+          fontSize: '20px',
+          letterSpacing: 0,
+        }}>
+        {title}
+      </h3>
       <p>{description}</p>
     </div>
   );
 }
-
+const Features = () => (
+  <div className="container">
+    <div className="row">
+      {features.map((feature, key) => {
+        return (
+          <div className={clsx('col col--3', styles.textAlignCenter)}>
+            <img
+              src={feature.imageUrl}
+              height="58px"
+              width="80px"
+              className={clsx(styles.image)}></img>
+            <h3
+              style={{
+                fontSize: '20px',
+                letterSpacing: 0,
+              }}>
+              {feature.title}
+            </h3>
+            <p style={{color: '#5e5e5e', fontWeight: 500}}>
+              {feature.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+);
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
@@ -95,7 +133,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
