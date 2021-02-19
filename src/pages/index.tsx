@@ -16,6 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Head from '@docusaurus/Head';
 import Fold2 from './folds/Fold2';
+import Fold1 from './folds/Fold1';
 
 function Home() {
   const context = useDocusaurusContext();
@@ -29,25 +30,11 @@ function Home() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          //@ts-ignore
           crossorigin="anonymous"></link>
         <title>Formst</title>
       </Head>
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Fold1 />
       <Fold2 />
     </Layout>
   );

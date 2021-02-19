@@ -8,7 +8,7 @@
  */
 module.exports = {
   title: 'Formst',
-  tagline: 'A new way to create React forms',
+  tagline: 'A JS library for quickly building high-performance forms in React',
   url: 'https://formstjs.github.io',
   baseUrl: '/',
   scripts: [

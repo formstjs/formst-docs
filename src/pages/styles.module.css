@@ -72,3 +72,12 @@
   width: 55%;
   margin: 'auto';
 }
+.size60 {
+  font-size: 60px;
+}
+.btnPrimary {
+  color: #413ad4;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: black;
+}
