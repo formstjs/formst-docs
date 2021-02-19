@@ -8,77 +8,12 @@
  */
 
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import Head from '@docusaurus/Head';
-import styles from './styles.module.css';
-import {Col, Row} from 'react-bootstrap';
 import Introduction from '../components/Introduction';
 import Features from '../components/Features';
 import Demo from '../components/Demo';
-
-const features = [
-  {
-    title: 'Simple To Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Create a MobX-State-Tree model that reflects the functionality and the
-        structure of your form and simply plug it into your form.
-      </>
-    ),
-  },
-  {
-    title: 'Middleware and Interdependency',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Intercept and manipulate the input or update another field on the basis
-        of a change in value. As it is closely associated with the Data-Layer,
-        field manipulation becomes very simple.
-      </>
-    ),
-  },
-  {
-    title: 'Out of the Box',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Get various validations for all fields right out of the box. Want to
-        create a custom one? It's just as simple.
-      </>
-    ),
-  },
-  {
-    title: 'Easy on the bundle',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: <>1.7kB. That's all.</>,
-  },
-];
-
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--3')}>
-      {imgUrl && (
-        <div>
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3
-        style={{
-          fontSize: '20px',
-          letterSpacing: 0,
-        }}>
-        {title}
-      </h3>
-      <p>{description}</p>
-    </div>
-  );
-}
 
 function Home() {
   const context = useDocusaurusContext();
@@ -104,43 +39,6 @@ function Home() {
       <Introduction />
       <Features />
       <Demo />
-      {/* <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </header>
-      <main> */}
-      {/* <Row>
-          <Col>Test</Col>
-        </Row> */}
-      {/* {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map(({title, imageUrl, description}) => (
-                  <Feature
-                    key={title}
-                    title={title}
-                    imageUrl={imageUrl}
-                    description={description}
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
-        )} */}
-      {/* </main> */}
     </Layout>
   );
 }

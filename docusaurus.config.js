@@ -14,7 +14,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-formst.png',
   organizationName: 'formstjs', // Usually your GitHub org/user name.
   projectName: 'formstjs.github.io', // Usually your repo name.
   themeConfig: {
@@ -31,20 +31,30 @@ module.exports = {
     // placeholder: 'Search Docs',
     // },
     navbar: {
-      title: 'Formst',
+      // title: 'Formst',
       logo: {
         alt: 'Formst Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Doc',
+          label: 'Docs',
           position: 'right',
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
+        {
+          href: 'https://market.nativebase.io/',
+          label: 'Market',
+          position: 'right',
+        },
+        {
+          href: 'https://geekyants.com/hire',
+          label: 'Hire us',
+          position: 'right',
+        },
         {
           href: 'https://github.com/formstjs/formst',
           label: 'GitHub',

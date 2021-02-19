@@ -1,14 +1,6 @@
 /* eslint-disable header/header */
 import React from 'react';
-import {
-  Col,
-  Row,
-  Button,
-  Image,
-  Container,
-  Card,
-  CardDeck,
-} from 'react-bootstrap';
+import {Col, Row, Image} from 'react-bootstrap';
 
 const Demo = () => {
   return (
@@ -51,7 +43,7 @@ const Demo = () => {
           </Col>
         </Row>
       </div>
-      <div style={{height: '400px'}}></div>
+      <div style={{height: '130px'}}></div>
     </>
   );
 };

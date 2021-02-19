@@ -1,14 +1,6 @@
 /* eslint-disable header/header */
 import React from 'react';
-import {
-  Col,
-  Row,
-  Button,
-  Image,
-  Container,
-  Card,
-  CardDeck,
-} from 'react-bootstrap';
+import {Col, Row, Card, CardDeck} from 'react-bootstrap';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 const features = [
   {
@@ -45,7 +37,7 @@ const features = [
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <Card className="mx-5 bg-light border-0 borderRadius25 col-md-6">
+    <Card className="bg-light border-0 borderRadius25 col-md-6">
       <Card.Img
         variant="top"
         //   src="../../static/img/chart_9.png"
