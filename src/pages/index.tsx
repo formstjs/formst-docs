@@ -17,6 +17,8 @@ import Head from '@docusaurus/Head';
 import styles from './styles.module.css';
 import {Col, Row} from 'react-bootstrap';
 import Introduction from '../components/Introduction';
+import Features from '../components/Features';
+import Demo from '../components/Demo';
 
 const features = [
   {
@@ -77,33 +79,7 @@ function Feature({imageUrl, title, description}) {
     </div>
   );
 }
-const Features = () => (
-  <div className="container">
-    <div className="row">
-      {features.map((feature, key) => {
-        return (
-          <div className={clsx('col col--3', styles.textAlignCenter)}>
-            <img
-              src={feature.imageUrl}
-              height="58px"
-              width="80px"
-              className={clsx(styles.image)}></img>
-            <h3
-              style={{
-                fontSize: '20px',
-                letterSpacing: 0,
-              }}>
-              {feature.title}
-            </h3>
-            <p style={{color: '#5e5e5e', fontWeight: 500}}>
-              {feature.description}
-            </p>
-          </div>
-        );
-      })}
-    </div>
-  </div>
-);
+
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
@@ -121,11 +97,13 @@ function Home() {
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;700&display=swap"
           rel="stylesheet"
         />
       </Head>
       <Introduction />
+      <Features />
+      <Demo />
       {/* <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
