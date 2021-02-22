@@ -5,7 +5,7 @@ sidebar_label: defineValidators
 slug: /api/define-validators
 ---
 
-We can define custom validations using this function.
+You can define custom validations using this function.
 
 ### Usage
 
@@ -17,4 +17,3 @@ defineValidators({
   }),
 });
 ```
-

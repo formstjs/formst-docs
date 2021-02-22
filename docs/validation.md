@@ -5,7 +5,7 @@ sidebar_label: Validation
 slug: /validation
 ---
 
-We can add validations to each field. You can pass validations using options in the `createFormModel` API. Field validations can be defined in multiple ways.
+You can add validations to each field and pass validations using options in the `createFormModel` API. Field validations can be defined in multiple ways.
 
 ### Default way of adding validation
 
