@@ -7,6 +7,7 @@
 .bgBlack {
   background-color: black !important;
   border: 0 !important;
+  color: white !important;
 }
 .font50 {
   font-size: 50px;
@@ -37,4 +38,11 @@
   .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
     padding-top: 0 !important;
   }
+  .sidebar_3gvy {
+    padding-top: 0 !important;
+  }
+}
+
+.col--3 {
+  height: 100% !important;
 }
