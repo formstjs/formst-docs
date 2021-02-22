@@ -35,12 +35,24 @@ const Demo = () => {
           <Col
             className="d-flex justify-content-center position-absolute "
             style={{bottom: '-60px'}}>
-            <Image
+            {/* <Image
               src={useBaseUrl('img/Bitmap.png')}
               width={860}
               height={500}
               className="objectFit"
-            />
+            /> */}
+            <iframe
+              src="https://codesandbox.io/embed/wispy-glade-714je?fontsize=14&hidenavigation=1&theme=dark"
+              style={{
+                width: '75%',
+                height: '500px',
+                border: 0,
+                borderRadius: '4px',
+                overflow: 'hidden',
+              }}
+              title="wispy-glade-714je"
+              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
           </Col>
         </Row>
       </div>
