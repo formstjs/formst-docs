@@ -9,31 +9,52 @@
 
 module.exports = {
   title: 'Formst',
-  tagline: 'A new way to create React forms',
+  tagline: 'A JS library for quickly building high performance forms in React.',
   url: 'https://formstjs.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-formst.png',
   organizationName: 'formstjs', // Usually your GitHub org/user name.
   projectName: 'formstjs.github.io', // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
+    // algolia: {
+    // apiKey: '74e045c9f1e92488f848f0834b497d62',
+    // indexName: 'formst',
+    // Optional: see doc section bellow
+    // contextualSearch: true,
+    // Optional: Algolia search parameters
+    // searchParameters: {},
+    // algoliaOptions: {facetFilters: ['type:content', 'language:en']}, // Optional, if provided by Algolia,
+    // debug: false,
+    // placeholder: 'Search Docs',
+    // },
     navbar: {
-      title: 'Formst',
+      // title: 'Formst',
       logo: {
         alt: 'Formst Logo',
-        src: 'img/logo.svg',
+        src: 'img/Logo-Light.svg',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
+          position: 'right',
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
+        {
+          href: 'https://market.nativebase.io/',
+          label: 'Market',
+          position: 'right',
+        },
+        {
+          href: 'https://geekyants.com/hire',
+          label: 'Hire us',
+          position: 'right',
+        },
         {
           href: 'https://github.com/formstjs/formst',
           label: 'GitHub',
@@ -74,19 +95,19 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/formstjs/formst',
-            },
-          ],
-        },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: 'blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/formstjs/formst',
+        //     },
+        //   ],
+        // },
         {
           title: 'Legal',
           // Please do not remove the privacy and terms, it's a legal requirement.

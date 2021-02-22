@@ -1,0 +1,35 @@
+.btn-primary {
+  background-color: pink !important;
+}
+.bg {
+  background-color: rgb(65, 58, 212);
+}
+.bgBlack {
+  background-color: black !important;
+  border: 0 !important;
+}
+.font50 {
+  font-size: 50px;
+}
+.btn-secondary {
+  background-color: white !important;
+  color: rgb(65, 58, 212) !important;
+  border-color: transparent !important;
+  font-weight: 700 !important;
+}
+.navbar {
+  background-color: rgb(65, 58, 212) !important;
+  box-shadow: none;
+}
+.main-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.objectFit {
+  object-fit: contain;
+}
+
+.borderRadius25 {
+  border-radius: 25px;
+}
