@@ -33,3 +33,8 @@
 .borderRadius25 {
   border-radius: 25px;
 }
+@media (min-width: 997px) {
+  .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
+    padding-top: 0 !important;
+  }
+}

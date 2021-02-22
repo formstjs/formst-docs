@@ -1,6 +1,7 @@
 /* eslint-disable header/header */
 import React from 'react';
 import {Col, Row, Image} from 'react-bootstrap';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const Demo = () => {
   return (
@@ -35,7 +36,7 @@ const Demo = () => {
             className="d-flex justify-content-center position-absolute "
             style={{bottom: '-60px'}}>
             <Image
-              src="../../static/img/Bitmap.png"
+              src={useBaseUrl('img/Bitmap.png')}
               width={860}
               height={500}
               className="objectFit"
