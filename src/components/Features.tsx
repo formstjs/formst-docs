@@ -66,7 +66,7 @@ const Features = () => {
       </Row>
       <Row>
         <Col className="d-flex justify-content-center text-center w-25 ">
-          <p>
+          <p className="px-2">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
             cupidatat.
@@ -74,7 +74,7 @@ const Features = () => {
         </Col>
       </Row>
       {features && features.length > 0 && (
-        <CardDeck className="mx-5 px-3 ">
+        <CardDeck className="mx-md-5 mx-lg-5 px-3 ">
           {features.map(({title, imageUrl, description}) => (
             <Feature
               key={title}

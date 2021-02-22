@@ -12,6 +12,11 @@
 .font50 {
   font-size: 50px;
 }
+@media (max-width: 500px) {
+  .font50 {
+    font-size: 32px;
+  }
+}
 .btn-secondary {
   background-color: white !important;
   color: rgb(65, 58, 212) !important;
@@ -45,4 +50,10 @@
 
 .col--3 {
   height: 100% !important;
+}
+.gh-btn {
+  padding: 10px !important;
+}
+.gh-count {
+  padding: 10px !important;
 }

@@ -5,23 +5,32 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const Introduction = () => {
   return (
-    <div className="bg py-4">
+    <div className="bg py-4" style={{height: '100vh'}}>
       <Row className="py-2">
         <Col className="d-flex justify-content-center text-center text-white">
-          <h1 className="font-weight-bold font50">
-            <Col>A JS library for quickly building</Col>
-            <Col> high-performance forms in React</Col>
+          <h1 className="font-weight-bold font50 col-lg-8 ">
+            <Col className="justify-content-center">
+              A JS library for quickly building high-performance forms in React
+            </Col>
           </h1>
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex justify-content-center">
+        <Col className="d-flex justify-content-center align-items-center">
           <a
             className="btn btn-secondary px-3 py-2 mx-2"
             href={useBaseUrl('/docs')}>
             Get Started
           </a>
-          <a
+
+          {/* <iframe
+            src="https://ghbtns.com/github-btn.html?user=formstjs&repo=formst&type=star&count=true&size=large"
+            scrolling="0"
+            width="170"
+            height="30"
+            frameBorder="0"
+            title="GitHub"></iframe> */}
+          {/* <a
             className=" btn px-3 py-2 mx-2 bgBlack "
             href="https://github.com/formstjs/formst">
             <span className="d-flex align-items-center">
@@ -47,7 +56,7 @@ const Introduction = () => {
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
               </svg>
             </span>
-          </a>
+          </a> */}
         </Col>
       </Row>
       <Row>
