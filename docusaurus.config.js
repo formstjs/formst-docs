@@ -34,7 +34,7 @@ module.exports = {
       // title: 'Formst',
       logo: {
         alt: 'Formst Logo',
-        src: 'img/logo.png',
+        src: 'img/Logo-Light.svg',
       },
       items: [
         {
@@ -95,19 +95,19 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/formstjs/formst',
-            },
-          ],
-        },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: 'blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/formstjs/formst',
+        //     },
+        //   ],
+        // },
         {
           title: 'Legal',
           // Please do not remove the privacy and terms, it's a legal requirement.
