@@ -7,6 +7,7 @@
 .bgBlack {
   background-color: black !important;
   border: 0 !important;
+  color: white !important;
 }
 .font50 {
   font-size: 50px;
