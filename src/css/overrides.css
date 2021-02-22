@@ -57,3 +57,7 @@
 .gh-count {
   padding: 10px !important;
 }
+
+.navbar__toggle {
+  color: white;
+}
