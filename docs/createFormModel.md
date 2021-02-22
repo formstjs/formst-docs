@@ -5,31 +5,32 @@ sidebar_label: createFormModel
 slug: /api/create-form-model
 ---
 
-It creates a Model which comes with some pre-built functions.
+You can add a middleware to modify the behaviour of the inbuilt actions provided by **Formst**. For example, you can modify a form value by intercepting the `setValue` action.
 
-### API
-
-`createFormModel(<Model Name>, <Model structure>, options: OptionType)`
+Formst exports [addMiddleware](https://mobx-state-tree.js.org/concepts/middleware) from MobX state tree. You can refer to [their documentation](https://mobx-state-tree.js.org/concepts/middleware) for detailed usage and API details.
 
 ### Usage
 
-```
+```tsx
 const TodoForm = createFormModel(
   'TodoForm',
   {
     title: types.string,
     description: types.string,
   },
-  {
-    validation: {
-      title: ['required'],
-      description: 'required',
-    },
-  }
+  ...
 );
+
+addMiddleware(TodoForm, (call, next, abort) => {
+  if (call.name === 'setValue') {
+    const fieldName = call.args[0];
+    if (fieldName === 'title') {
+      call.args[1] = call.args[1].toUpperCase();
+    }
+  }
+
+  next(call);
+});
 ```
 
-### Variables Provided
-
-- **submitting:** Returns true when the form is submitting
-- **touched:** Returns a JSON with the values that are touched
+To get all the available actions for a form model, refer to the [source code](https://github.com/formstjs/formst/blob/master/src/createFormModel.ts).

@@ -72,7 +72,7 @@ const createProjectForm = CreateProject.create({
 
 If you want to use `<Field />` and `<ErrorMessage />`, you need to wrap your form inside `<Formst />` (as explained [here](https://www.notion.so/Formst-5ca92ac7368b42bb962048844c0d2f98)). For nested forms, you have to nest `<Formst />` in the same way as form instances and pass their corresponding instances as a `formInstance` prop.
 
-This allows a nested `<Field />` to directly refer to the form instance to which it belongs using `name` prop. Here's an example:
+This allows a nested `<Field />` to directly refer to the form instance to which it belongs using the `name` prop. Here's an example:
 
 ```tsx
 const CreateProjectComponent = observer(() => {

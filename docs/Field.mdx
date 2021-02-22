@@ -5,21 +5,24 @@ sidebar_label: Field
 slug: /api/field
 ---
 
-We can use this component to render an input.
+You can use `<Field />` to reduce the code you write for wiring up inputs and handlers to your input element. `<Field />` will only work if it is a descendant of `<Formst />`.
 
 ### API
 
-```
-import { Field } from "formst";
+```tsx
+import {Field} from 'formst';
 
-<Field name="field-name" />
+<Formst formInstance={formInstance}>
+  // This will handle name, value, onChange and onBlur props for you
+  <Field name="field-name" />
+</Formst>;
 ```
 
 ### Parameters
 
-```
-name: string, required
-component: string | React.Component
+```jsx
+name: string, required;
+component: string | React.Component;
 ```
 
 Any extra props will be passed down to the child component.

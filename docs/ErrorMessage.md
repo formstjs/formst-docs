@@ -5,14 +5,16 @@ sidebar_label: ErrorMessage
 slug: /api/error-message
 ---
 
-We can use this component to render an error message for an input.
+You can use this component to render an error message for an input. `<ErrorMessage />` will only work if it is a descendant of `<Formst />`.
 
 ### API
 
-```
-import { ErrorMessage } from "formst";
+```tsx
+import {ErrorMessage} from 'formst';
 
-<ErrorMessage name="field-name" />
+<Formst formInstance={formInstance}>
+  <ErrorMessage name="field-name" />
+</Formst>;
 ```
 
 ### Parameters

@@ -7,7 +7,7 @@ slug: /
 
 ## Introduction
 
-- **Formst** is the new way to create and handle forms. Unlike famous libraries like Formik that are UI-first, Formst is data first. It is based on **_MST_**(MobX-State-Tree). This library helps you create high-performance forms with interdependent fields within tables and add validations.
+- **Formst** is the new way to create and handle forms. Unlike most form libraries that are UI-first, Formst is data first. It is based on **_MST_**(MobX-State-Tree). This library helps you create high-performance forms with interdependent fields within tables and add validations.
 
 Note: FormST has peer dependencies and requires [mobx](https://mobx.js.org/), [mobx-react-lite](https://www.npmjs.com/package/mobx-react-lite)/[mobx-react](https://github.com/mobxjs/mobx-react) and [mobx-state-tree](https://mobx-state-tree.js.org/).
 
@@ -44,13 +44,7 @@ npm add formst
          description: 'required',
        },
      },
-   ).actions((self) => ({
-     onSubmit: () => {
-       setTimeout(() => {
-         alert(JSON.stringify(getSnapshot(self), null, 2));
-       }, 100);
-     },
-   }));
+   );
    ```
 
 2. Create an instance of the model:
@@ -65,19 +59,24 @@ npm add formst
 3. Wrap the components inside **Formst** and use _Field_ API to render the fields:
 
    ```tsx
-   <Formst formInstance={todoForm}>
-     <form onSubmit={todoForm.handleSubmit}>
-       <Field name="title" />
-       <ErrorMessage name="title" />
+   export default observer(() => {
+       todoForm.onSubmit((formInstance: Instance<typeof todoForm>) => {
+         console.log(formInstance.getFormData());
+         formInstance.setSubmitting(false);
+       });
+         return (
+       <Formst formInstance={todoForm}>
+         <form onSubmit={todoForm.handleSubmit}>
+           <Field name="title" />
+           <ErrorMessage name="title" />
+           <br />
+           <Field name="description" />
+           <ErrorMessage name="description" />
 
-       <br />
-
-       <Field name="description" />
-       <ErrorMessage name="description" />
-
-       <button type="submit">Submit</button>
-     </form>
-   </Formst>
+           <button type="submit">Submit</button>
+         </form>
+       </Formst>
+       });
    ```
 
 4. Optional: If you don't like `Field` API, you can directly plug this to an element.
