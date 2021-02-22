@@ -56,7 +56,7 @@ const Demo = () => {
           </Col>
         </Row>
       </div>
-      <div style={{height: '130px'}}></div>
+      <div style={{height: '130px'}} className="bg-white"></div>
     </>
   );
 };

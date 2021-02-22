@@ -46,8 +46,8 @@ function Feature({imageUrl, title, description}) {
         height={100}
         width={100}
       />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
+      <Card.Body className="text-center">
+        <Card.Title className="font-weight-bold">{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
       </Card.Body>
     </Card>
@@ -56,7 +56,7 @@ function Feature({imageUrl, title, description}) {
 
 const Features = () => {
   return (
-    <div className="py-5">
+    <div className="py-5 bg-white">
       <Row>
         <Col className="d-flex justify-content-center text-center ">
           <Col>

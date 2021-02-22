@@ -16,9 +16,11 @@ const Introduction = () => {
       </Row>
       <Row>
         <Col className="d-flex justify-content-center">
-          <Button className=" btn btn-secondary px-3 py-2 mx-2">
+          <a
+            className="btn btn-secondary px-3 py-2 mx-2"
+            href={useBaseUrl('/docs')}>
             Get Started
-          </Button>
+          </a>
           <a
             className=" btn px-3 py-2 mx-2 bgBlack "
             href="https://github.com/formstjs/formst">
