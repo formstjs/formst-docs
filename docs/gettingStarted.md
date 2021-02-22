@@ -9,6 +9,8 @@ slug: /
 
 - **Formst** is the new way to create and handle forms. Unlike famous libraries like Formik that are UI-first, Formst is data first. It is based on **_MST_**(MobX-State-Tree). This library helps you create high-performance forms with interdependent fields within tables and add validations.
 
+Note: FormST has peer dependencies and requires [mobx](https://mobx.js.org/), [mobx-react-lite](https://www.npmjs.com/package/mobx-react-lite)/[mobx-react](https://github.com/mobxjs/mobx-react) and [mobx-state-tree](https://mobx-state-tree.js.org/).
+
 ## Installation
 
 Use **yarn** or **npm** to install this library:
