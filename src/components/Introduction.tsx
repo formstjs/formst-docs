@@ -10,7 +10,9 @@ const Introduction = () => {
         <Col className="d-flex justify-content-center text-center text-white">
           <h1 className="font-weight-bold font50 col-lg-8 ">
             <Col className="justify-content-center">
-              A JS library for quickly building high-performance forms in React
+              A JS library for quickly building{' '}
+              <span className="d-inline-block">high-performance</span> forms in
+              React
             </Col>
           </h1>
         </Col>

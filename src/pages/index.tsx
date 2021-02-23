@@ -19,9 +19,12 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
-    <Layout description="Description will go into a meta tag in <head />">
+    <Layout description="A JS library for quickly building high-performance forms in React">
       <Head>
-        <meta property="og:description" content="My custom description" />
+        <meta
+          property="og:description"
+          content="A JS library for quickly building high-performance forms in React"
+        />
         <meta charSet="utf-8" />
         <title>Formst</title>
         <link

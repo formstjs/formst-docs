@@ -85,14 +85,6 @@ module.exports = {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/formst',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/formst',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/formst',
-            },
           ],
         },
         {
